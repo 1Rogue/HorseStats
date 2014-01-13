@@ -7,20 +7,17 @@ import org.bukkit.plugin.java.JavaPlugin;
 import bdubz4552.bukkit.plugins.horsestats.HorseStatsCommands;
 import bdubz4552.bukkit.plugins.horsestats.HorseStatsEventListener;
 
-
 public class HorseStatsMain extends JavaPlugin {
 	protected Logger log;
-	/**
-	 * lets test this
-	 */
+	//Mandatory void for all Bukkit plugins; executes on server starts/reloads
 	public void onEnable() {
 		this.log = this.getLogger();
 		getServer().getPluginManager().registerEvents(new HorseStatsEventListener(), this);
-		
 		this.saveDefaultConfig();
 		registerCommands();
 		setConfigBooleans();
 	}
+	//Registers commands. Called in onEnable()
 	private void registerCommands() {
 		getCommand("horsestats").setExecutor(new HorseStatsCommands());
 		getCommand("htp").setExecutor(new HorseStatsCommands());
@@ -33,9 +30,7 @@ public class HorseStatsMain extends JavaPlugin {
 		getCommand("setstyle").setExecutor(new HorseStatsCommands());
 		getCommand("tame").setExecutor(new HorseStatsCommands());
 	}
-	/**
-	 * Sets static booleans to config values.
-	 */
+	//Sets static booleans to the config values. These are easier to use than referencing to the config over and over.
 	private void setConfigBooleans() {
 		if (this.getConfig().getBoolean("horseGrief") == true) {
 			horseGrief = true;
@@ -58,7 +53,7 @@ public class HorseStatsMain extends JavaPlugin {
 			interWorldTeleport = false;
 		}
 	}
-	
+	//The actual booleans, defaulted to false. These change when setConfigBooleans() is called in onEnable().
 	public static boolean interWorldTeleport = false;
 	public static boolean horseGrief = false;
 	public static boolean horseLaunch = false;

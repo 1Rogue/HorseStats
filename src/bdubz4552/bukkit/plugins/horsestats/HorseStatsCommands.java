@@ -10,6 +10,7 @@ import org.bukkit.entity.Player;
 import bdubz4552.bukkit.plugins.horsestats.commands.*;
 
 public class HorseStatsCommands implements CommandExecutor {
+	//Fired whenever a HorseStats command is used.
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
 		if (sender instanceof Player) {
 			Player p = (Player) sender;
@@ -26,6 +27,7 @@ public class HorseStatsCommands implements CommandExecutor {
 			return true;
 		}
 	}
+	//Boolean to check for permissions for commands.
 	public boolean permCheck(Player p, String command) {
 		if (p.hasPermission("HorseStats." + command)) {
 			return true;
@@ -33,6 +35,7 @@ public class HorseStatsCommands implements CommandExecutor {
 			return false;
 		}
 	}
+	//Determines what code to execute based on the command given.
 	public void findCommand(Player p, Horse h, String commandLabel, String[] args) {
 		if (commandLabel.equalsIgnoreCase("horsestats")) {
 			if (args.length == 1) {
@@ -45,7 +48,7 @@ public class HorseStatsCommands implements CommandExecutor {
 				Help.horseStatsHelp(p);
 			}
 		}
-		if (permCheck(p, commandLabel) == true) {
+		else if (permCheck(p, commandLabel) == true) {
 			if (commandLabel.equalsIgnoreCase("delchest")) {
 				Delchest.delchest(p, h);
 			}
