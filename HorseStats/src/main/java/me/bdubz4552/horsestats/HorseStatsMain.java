@@ -4,9 +4,6 @@ import java.util.logging.Logger;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.bdubz4552.horsestats.HorseStatsCommands;
-import me.bdubz4552.horsestats.HorseStatsEventListener;
-
 public class HorseStatsMain extends JavaPlugin {
 	protected Logger log;
 	//Mandatory void for all Bukkit plugins; executes on server starts/reloads

@@ -1,4 +1,4 @@
-package me.bdubz4552.horsestats.commands;
+package me.bdubz4552.horsestats.command.commands;
 
 import org.bukkit.entity.Horse;
 import org.bukkit.entity.Player;

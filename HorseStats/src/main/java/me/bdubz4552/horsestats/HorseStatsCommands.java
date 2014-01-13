@@ -1,12 +1,12 @@
 package me.bdubz4552.horsestats;
 
+import me.bdubz4552.horsestats.command.commands.*;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Horse;
 import org.bukkit.entity.Player;
-import me.bdubz4552.horsestats.commands.*;
 
 
 public class HorseStatsCommands implements CommandExecutor {
