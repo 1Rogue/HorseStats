@@ -7,7 +7,10 @@ Woo my first repository! I'm still figuring things out so please forgive me if s
 
 A few things I want to address:
 
--I have not put in comments; you might have a hard time following things
+-This repo will be updated throughout development. There are changes in the code that are not included in a version
+ release.
+
+-I have put in some comments; the main classes have them, but command classes do not.
 
 -I am fairly new to coding and have taught myself everything I know. If my code looks 
  "unconventional" or "different", it is because I have never learned of such conventions.
