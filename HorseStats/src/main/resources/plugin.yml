@@ -1,0 +1,69 @@
+main: me.bdubz4552.horsestats.HorseStatsMain
+name: HorseStats
+version: 2.2
+author: bdubz4552
+description: Displays stats of a horse.
+#Start Command List
+commands:
+    horsestats:
+        description: Displays plugin usage.
+        usage: /horsestats
+    ownerset:
+        description: Changes the owner of a horse.
+        usage: /ownerset <new owner>
+    untame:
+        description: Untames a horse.
+        usage: /untame
+    delname:
+        description: Delete a horse's custom name.
+        usage: /delname
+    delchest:
+        description: Delete a horse's chest.
+        usage: /delchest
+    slayhorse:
+        description: Slays the ridden horse.
+        usage: /slayhorse | /slayhorse launch
+    hspawn:
+        description: Spawns a horse/donkey/mule.
+        usage: /hspawn <donkey|mule>
+    htp:
+        description: Teleports the selected horse
+        usage: /htp
+    setstyle:
+        description: Changes a horse's color and style.
+        usage: /setstyle <type> <value>
+    tame:
+        description: Tames a horse
+        usage: /tame
+#Start Permissions List
+permissions:
+    HorseStats.*:
+        description: Gives access to ALL HorseStats permissions
+        children:
+            HorseStats.slayhorse: true
+            HorseStats.hspawn: true
+            HorseStats.untame: true
+            HorseStats.delname: true
+            HorseStats.delchest: true
+            HorseStats.htp: true
+            HorseStats.setstyle: true
+            HorseStats.ownerset: true
+            HorseStats.tame: true
+    HorseStats.slayhorse:
+        description: Allows use of /slayhorse
+    HorseStats.hspawn:
+        description: Allows use of /hspawn
+    HorseStats.untame:
+        description: Allows use of /untame
+    HorseStats.delname:
+        description: Allows use of /delname
+    HorseStats.delchest:
+        description: Allows use of /delchest
+    HorseStats.htp:
+        description: Allows use of /htp
+    HorseStats.setstyle:
+        description: Allows use of /setstyle
+    HorseStats.ownerset:
+        description: Allows use of /ownerset
+    HorseStats.tame:
+        description: Allows use of /tame

@@ -1,0 +1,17 @@
+#All settings should be "true" or "false". Do not capitalize "true" or "false".
+#If you break the config and don't know what to do, delete it, and reload or restart
+#your server. A new one will generate.
+
+#Allow plugin update notifications? (Displayed at server startup when the plugin is enabled)
+allowPluginUpdateNotifications: true
+#Allow horses to be killable by players who don't own them?
+horseGrief: false
+#Allow use of the "launch" argument for /slayhorse?
+horseLaunch: true
+#Should non-owners be able to interact with horses by right clicking? Setting this to false will
+#completely lock non-owners out of horse inventories and prevent them from being ridden. Untamed
+#horses are still fully accessible.
+nonOwnerHorseInteraction: true
+#Should horses be able to teleport between worlds? IMPORTANT: Note that this runs the risk of
+#corrupting data for ALL horses on the server.
+allowMultiWorldTeleport: false
